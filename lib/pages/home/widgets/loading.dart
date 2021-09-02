@@ -8,8 +8,6 @@ class LoadingWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //TODO: QUITAR LANDSCOPE
-
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Column(
