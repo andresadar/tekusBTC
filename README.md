@@ -1,16 +1,19 @@
 # tekus
 
-A new Flutter project.
+TekusBTC
+
+You can follow me on instagram [@andresadd](https://www.instagram.com/andresadd)
+
+<img src='https://imagenpng.com/wp-content/uploads/2018/03/logoinstagram3.png' width="250">
 
 ## Getting Started
+To build and run this project:
 
-This project is a starting point for a Flutter application.
+1. Get Flutter [here](https://flutter.dev) if you don't already have it
+2. Clone this repository.
+3. `cd` into the repo folder.
+4. run `flutter run-android` or `flutter run-ios` to build the app.
 
-A few resources to get you started if this is your first Flutter project:
+(Please note that a Mac with XCode is required to build for iOS)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project is built with flutter >= 2.12.0 implements [***NULLSAFETY***]
