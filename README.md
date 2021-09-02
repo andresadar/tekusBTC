@@ -25,7 +25,6 @@ description:
 TekusBTC dynamically shows the current price in BTC in 60-second intervals, a history of closing prices of the last 15 days in EUR, USD and COP
 
 
- | [**Festival $ Events**](https://i.ibb.co/tPCZfJ6/Whats-App-Image-2021-09-02-at-2-35-55-PM.jpg) |
-|------------|-------------| 
-|  <img src="https://i.ibb.co/tPCZfJ6/Whats-App-Image-2021-09-02-at-2-35-55-PM.jpg" width="250"> |
+
+<img src="https://i.ibb.co/tPCZfJ6/Whats-App-Image-2021-09-02-at-2-35-55-PM.jpg" width="250">
 
