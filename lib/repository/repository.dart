@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:tekus/repository/models/day_model.dart';
 
 class DataApiCoinbase {
   ///Retorna un [String] con el precio actual del Bitcoin en COP,
@@ -20,11 +19,11 @@ class DataApiCoinbase {
 
     priceBTC = _decodedData['data']['rates']['USD'];
 
-    print(priceBTC);
-
     return priceBTC;
   }
 
+  ///Retorna un [String] con el precio del [day][month][year] del Bitcoin en moneda segun el [currency],
+  ///en caso de un error retorna un [String] con el [statusCode] del error
   Future<String> getDayHistory(
       String year, String month, String day, String currency) async {
     String price = '';
@@ -40,8 +39,6 @@ class DataApiCoinbase {
       return price = 'Error code' + _response.statusCode.toString();
 
     final _decodedData = json.decode(_response.body);
-
-    print(_decodedData);
 
     price = _decodedData['data']['amount'];
 

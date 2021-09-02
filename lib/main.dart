@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tekus/theme/theme_dark.dart';
 
-import 'pages/home/home_page.dart';
+import 'package:tekus/routes/pages.dart';
+import 'package:tekus/theme/theme_dark.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Tekus BTC',
       theme: MyThemeDark.themeDark,
-      home: HomePage(),
+      initialRoute: Pages.INITIAL,
+      routes: Pages.routes,
     );
   }
 }

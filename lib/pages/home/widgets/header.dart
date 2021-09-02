@@ -6,6 +6,9 @@ import 'package:tekus/repository/implementatios.dart';
 import 'package:tekus/repository/repository.dart';
 import 'package:tekus/utils/format_text.dart';
 
+import 'cicle_animation.dart';
+
+///Retorna el Header/Cabecera del screen [HomePage]
 class HeaderHome extends StatefulWidget {
   const HeaderHome({Key? key, required this.priceBTC}) : super(key: key);
 
@@ -38,6 +41,7 @@ class _HeaderHomeState extends State<HeaderHome> {
   @override
   void dispose() {
     priceTimerSeconds?.cancel();
+    priceBTC.dispose();
     super.dispose();
   }
 
@@ -48,24 +52,7 @@ class _HeaderHomeState extends State<HeaderHome> {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          FittedBox(
-            child: Container(
-              key: Key(
-                random.nextInt(100).toString(),
-              ),
-              child: TweenAnimationBuilder(
-                tween: Tween(begin: 0.0, end: 1.0),
-                duration: const Duration(seconds: 60),
-                builder: (context, double value, child) {
-                  return CircularProgressIndicator(
-                    value: value,
-                    backgroundColor: Colors.grey,
-                    strokeWidth: 2,
-                  );
-                },
-              ),
-            ),
-          ),
+          CirlceAnimation(),
           Container(
             decoration: BoxDecoration(shape: BoxShape.circle),
             child: ValueListenableBuilder<String>(
@@ -76,7 +63,7 @@ class _HeaderHomeState extends State<HeaderHome> {
                   children: [
                     Text('1 BITCOIN'),
                     Text(
-                      '\$' + format(value),
+                      '\$' + value.format,
                       style: Theme.of(context)
                           .textTheme
                           .headline5!
