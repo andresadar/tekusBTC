@@ -6,6 +6,6 @@ abstract class MyThemeDark {
     visualDensity: VisualDensity.adaptivePlatformDensity,
     primarySwatch: Colors.deepPurple,
     brightness: Brightness.dark,
-    scaffoldBackgroundColor: Color(0xFF323445),
+    // scaffoldBackgroundColor: Color(0xFF323445),
   );
 }
